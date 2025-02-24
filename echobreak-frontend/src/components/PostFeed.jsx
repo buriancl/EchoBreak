@@ -7,7 +7,7 @@ function PostFeed() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000")
+      .get("http://localhost:5000/communities/tech/posts")
       .then((response) => setPosts(response.data))
       .catch((error) => console.error("Error fetching posts:", error));
   }, []);
